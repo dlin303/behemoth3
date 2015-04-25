@@ -57,8 +57,9 @@ public class VerticalHand : MonoBehaviour {
 			transform.position.z);
 
 		if (target != null) {
-			if (selfCollider.bounds.Intersects(targetCollider.bounds)) {
-				Debug.Log ("woot woot");
+			if (selfCollider.bounds.Intersects(targetCollider.bounds) && grabbing) {
+				spriteRenderer.sprite = clenchedHand;
+				Destroy(target);
 			}
 		}
 	}
@@ -73,11 +74,4 @@ public class VerticalHand : MonoBehaviour {
 			targetCollider = target.GetComponent<BoxCollider2D>();
 		}
 	}
-
-	/*
-	void OnCollisionEnter2D(Collision2D collision) {
-		Debug.Log ("collisionssssss");
-		target = collision.gameObject;
-		targetCollider = target.GetComponent<Renderer>().bounds;
-	}*/
 }
