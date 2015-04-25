@@ -370,6 +370,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vertical: Vertical
+  grab: Grab_P1
+  movingForward: 0
   speed: {x: 1, y: 1}
   retractMagnitude: 4
 --- !u!50 &1039322504
