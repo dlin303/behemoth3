@@ -5,18 +5,28 @@ public class VerticalHand : MonoBehaviour {
 	public string vertical = "Vertical";
 	public string grab = "Grab_P1";
 	public bool movingForward = false;
-
-
+	public Sprite emptyHand;
+	public Sprite clenchedHand;
+	
 	public Vector2 speed = new Vector2(30, 30);
 	public float retractMagnitude = 4;
 	private Rigidbody2D rb2D; 
+	private SpriteRenderer spriteRenderer;
 	private Vector2 movement; 
 	private bool grabbing = false;
 	private GameObject target;
+	private BoxCollider2D selfCollider;
+	private BoxCollider2D targetCollider;
 
 	// Use this for initialization
 	void Start () {
 		rb2D = GetComponent<Rigidbody2D> ();
+		spriteRenderer = GetComponent<SpriteRenderer> ();
+		if (spriteRenderer != null) {
+			spriteRenderer.sprite = emptyHand;
+		}
+
+		selfCollider = GetComponent<BoxCollider2D> ();
 	}
 	
 	// Update is called once per frame
@@ -45,9 +55,29 @@ public class VerticalHand : MonoBehaviour {
 			Mathf.Clamp (transform.position.x, leftBorder, rightBorder),
 			Mathf.Clamp (transform.position.y, topBorder, bottomBorder),
 			transform.position.z);
+
+		if (target != null) {
+			if (selfCollider.bounds.Intersects(targetCollider.bounds)) {
+				Debug.Log ("woot woot");
+			}
+		}
 	}
 
 	void FixedUpdate() {
 		rb2D.velocity = movement;
 	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		if (other.tag == "Target") {
+			target = other.gameObject;
+			targetCollider = target.GetComponent<BoxCollider2D>();
+		}
+	}
+
+	/*
+	void OnCollisionEnter2D(Collision2D collision) {
+		Debug.Log ("collisionssssss");
+		target = collision.gameObject;
+		targetCollider = target.GetComponent<Renderer>().bounds;
+	}*/
 }
