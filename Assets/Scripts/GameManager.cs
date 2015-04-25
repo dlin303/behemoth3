@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour {
 	Animator p2_anim;
 	// Use this for initialization
 	void Start () {
-		Debug.Log(p2_worried);
 		p1_anim = player1.GetComponent<Animator>();
 		p2_anim = player2.GetComponent<Animator>();
 		p1_anim.SetBool("worried", p1_worried);
@@ -21,6 +20,9 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		//setplayerfaces 
+		//if player face is exploding and player moves, then player loses
+		//if player time is up, then the player loses 
 
 
 	
@@ -32,6 +34,8 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void PlayerLoses() {
+		//game ends 
+		//call player controller 
 
 
 	}
