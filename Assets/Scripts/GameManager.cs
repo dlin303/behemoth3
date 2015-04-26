@@ -110,6 +110,7 @@ public class GameManager : MonoBehaviour {
 		if(p1Arm.didWin() && p2Arm.didWin()) {
 			isGameOver = true;
 			Invoke("loadWinningEnding", 2);
+			MusicPlayerSingleton.Instance.stopMusic ();
 		}
 	}
 
