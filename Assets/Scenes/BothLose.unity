@@ -147,7 +147,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -295,7 +295,7 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8190039bc16144ef9b58f5e3318e0fca, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1469829720
+--- !u!1 &1469829720 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 112172, guid: 8190039bc16144ef9b58f5e3318e0fca, type: 2}
   m_PrefabInternal: {fileID: 1268032183}
@@ -314,3 +314,6 @@ MonoBehaviour:
   sceneTime: 3
   isTitleScreen: 0
   isEndingScreen: 1
+  isLosingScreen: 1
+  losingSound: {fileID: 0}
+  winningSound: {fileID: 0}
