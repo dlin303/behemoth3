@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 
 public class GameManager : MonoBehaviour {
 	public GameObject p1FaceGameObject;
@@ -45,8 +47,9 @@ public class GameManager : MonoBehaviour {
 		}
 
 		if (isGameEnding) {
-			if(checkIfGameHasEnded())
-				gameOver (new List<PlayerFace>{p1PlayerFace, p2PlayerFace});
+			if(checkIfGameHasEnded()) {
+				gameOver(new List<PlayerFace>{p1PlayerFace, p2PlayerFace});
+			}
 			//let exploding animation play out
 			return;
 		}
@@ -91,11 +94,11 @@ public class GameManager : MonoBehaviour {
 	void checkIfPlayerWins() {
 		if(p1Arm.didWin())
 		{
-			p1PlayerFace.setFaceToHappy();
+			p1PlayerFace.wins();
 		}
 
 		if(p2Arm.didWin()) {
-			p1PlayerFace.setFaceToHappy();
+			p2PlayerFace.wins();
 		}
 
 		if(p1Arm.didWin() && p2Arm.didWin()) {
@@ -113,7 +116,11 @@ public class GameManager : MonoBehaviour {
 		p2Arm.disableInput();
 		
 		players.ForEach(delegate (PlayerFace player){
-			player.lose();
+			if(player.isWinner()) {
+				player.setUnimpressed(true);
+			} else {
+				player.lose();
+			}
 		});
 
 		isGameOver = true;

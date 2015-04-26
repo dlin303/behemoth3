@@ -70,6 +70,7 @@ public class VerticalHand : MonoBehaviour {
 	}
 
 	public bool didWin() {
+		Debug.Log ("Did player win? " + playerWins.ToString() + " " + grab);
 		return playerWins;
 	}
 

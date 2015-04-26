@@ -10,7 +10,8 @@ public class PlayerFace : MonoBehaviour {
 	Animator anim;
 	bool flipToStop;
 	float decrease = 0.0f;
-	bool loser;
+	bool loser = false;
+	bool winner = false;
 
 	
 	// Use this for initialization
@@ -34,7 +35,6 @@ public class PlayerFace : MonoBehaviour {
 		}
 
 		nextFlipTime = flipToStop ? nextFlipTime + goInterval : nextFlipTime + stopInterval; 
-		Debug.Log(string.Format("setting player {0} next flip time = {1}", playerName, nextFlipTime)); 
 	}
 
 	void setPlayerFace(bool isExploding, bool overrideCheck = false) {
@@ -43,7 +43,6 @@ public class PlayerFace : MonoBehaviour {
 			if(isExploding){
 				explodingStartTime = Time.time;
 			}
-			Debug.Log(string.Format("setting player {0} to exploding={1}", playerName, isExploding));
 		}
 	}
 
@@ -58,7 +57,8 @@ public class PlayerFace : MonoBehaviour {
 	}
 
 	public void setFaceToHappy() {
-		anim.SetBool("happy", true);
+		Debug.Log ("Set face to happy!");
+		anim.SetBool("worried", false);
 	}
 
 	public void setUnimpressed(bool unimpressed) {
@@ -74,7 +74,17 @@ public class PlayerFace : MonoBehaviour {
 		loser = true;
 	}
 
+	public void wins() {
+		setFaceToHappy ();
+		winner = true;
+
+	}
+
 	public bool isLoser() {
 		return loser;
+	}
+
+	public bool isWinner() {
+		return winner;
 	}
 }
