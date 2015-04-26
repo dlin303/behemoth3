@@ -6,6 +6,7 @@ public class SceneManager : MonoBehaviour {
 	public string nextLevel;
 	public float sceneTime = 3f;
 	public bool isTitleScreen = false;
+	public bool isEndingScreen = false;
 
 	float startTime;
 
@@ -15,13 +16,15 @@ public class SceneManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		if (!isTitleScreen) {
+		if (!isTitleScreen && !isEndingScreen) {
 			float inputX = Input.GetAxis ("Horizontal");
 			if (Time.time - startTime > sceneTime || (inputX > 0 && !string.IsNullOrEmpty (nextLevel))) {
 				Application.LoadLevel (nextLevel);
 			}
 
-		} else {
+		} else if (isEndingScreen && Input.GetKeyDown(KeyCode.Return)){
+			Application.LoadLevel("IntroScene1");
+		}else{
 			if (Input.GetKeyDown (KeyCode.Return)) {
 				Application.LoadLevel (nextLevel);
 			}
@@ -30,5 +33,6 @@ public class SceneManager : MonoBehaviour {
 		if (Input.GetKeyDown ("space")) {
 			Application.LoadLevel ("GameInstructions");
 		}
+
 	}
 }
