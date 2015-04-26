@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PlayerFace : MonoBehaviour {
-	public float goInterval = 5.0f;
+	public float goInterval = 4f;
 	public float stopInterval = 1f;
 	public float nextFlipTime = 0f;
 	public string playerName;
@@ -17,6 +17,7 @@ public class PlayerFace : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
+		flipToStop = false;
 		setNextFlipTime ();
 	}
 	
@@ -26,15 +27,22 @@ public class PlayerFace : MonoBehaviour {
 	}
 
 	void setNextFlipTime() {
-		decrease = Random.Range(0.0f, 0.50f);
+		decrease = Random.Range(1f, 2f);
 
 		if(flipToStop) {
 	  		goInterval -= decrease;
+			nextFlipTime += stopInterval;
+			Debug.Log("go Intervall " + goInterval);
+
 		}else{
 			stopInterval += decrease;
+			nextFlipTime += goInterval;
+			Debug.Log ("stopInterval " + stopInterval);
+
 		}
 
-		nextFlipTime = flipToStop ? nextFlipTime + goInterval : nextFlipTime + stopInterval; 
+		//nextFlipTime = flipToStop ? nextFlipTime + stopInterval : nextFlipTime + goInterval; 
+
 	}
 
 	void setPlayerFace(bool isExploding, bool overrideCheck = false) {
@@ -47,8 +55,8 @@ public class PlayerFace : MonoBehaviour {
 	}
 
 	public void flip(){
-		setNextFlipTime();
 		flipToStop = !flipToStop;
+		setNextFlipTime();
 		setPlayerFace(flipToStop);
 	}
 
@@ -57,7 +65,6 @@ public class PlayerFace : MonoBehaviour {
 	}
 
 	public void setFaceToHappy() {
-		Debug.Log ("Set face to happy!");
 		anim.SetBool("worried", false);
 	}
 

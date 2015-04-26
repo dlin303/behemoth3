@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 	public bool p1_worried;
 	public bool p2_worried;
 	public float explodeDelay;
+	public float gameTotalTime = 25.0f;
 
     VerticalHand p1Arm;
 	VerticalHand p2Arm;
@@ -21,7 +22,6 @@ public class GameManager : MonoBehaviour {
 	PlayerFace p2PlayerFace;
 
 	float gameStartTime; 
-	float gameTotalTime = 15.0f;
 	bool isGameEnding = false;
 	bool isGameOver = false;
 

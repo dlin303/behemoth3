@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class VerticalHand : MonoBehaviour {
-	public string vertical = "Vertical";
+	public string vertical = "w";
 	public string grab = "Grab_P1";
 	public bool movingForward = false;
 	public Sprite emptyHand;
@@ -70,7 +70,6 @@ public class VerticalHand : MonoBehaviour {
 	}
 
 	public bool didWin() {
-		Debug.Log ("Did player win? " + playerWins.ToString() + " " + grab);
 		return playerWins;
 	}
 
