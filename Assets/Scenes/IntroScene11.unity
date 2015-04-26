@@ -128,7 +128,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11428452, guid: 886b97d0325b846718251c043c7e0dc3, type: 2}
       propertyPath: nextLevel
-      value: PopCornRemote
+      value: GameInstructions
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 886b97d0325b846718251c043c7e0dc3, type: 2}

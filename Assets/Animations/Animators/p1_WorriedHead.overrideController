@@ -1,0 +1,12 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: p1_WorriedHead
+  m_Controller: {fileID: 9100000, guid: 47ba1074323a64499b451ce733cb953f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2e83eba6a71664324818276e27e716be, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 92b5ad950bf084286873485d95758f00, type: 2}
