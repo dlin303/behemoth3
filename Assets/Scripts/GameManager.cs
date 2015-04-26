@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour {
 	public bool p2_worried;
 	public float explodeDelay;
 	public float gameTotalTime = 25.0f;
+	public AudioClip[] fartSounds;
 
     VerticalHand p1Arm;
 	VerticalHand p2Arm;
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour {
 	float gameStartTime; 
 	bool isGameEnding = false;
 	bool isGameOver = false;
+	AudioSource source; 
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +38,7 @@ public class GameManager : MonoBehaviour {
 		gameStartTime = Time.time;
 	    p1PlayerFace = p1FaceGameObject.GetComponent<PlayerFace>(); 
 		p2PlayerFace = p2FaceGameObject.GetComponent<PlayerFace>();
+		source = GetComponent<AudioSource> ();
 	}
 	
 	// Update is called once per frame
@@ -119,6 +122,11 @@ public class GameManager : MonoBehaviour {
 			if(player.isWinner()) {
 				player.setUnimpressed(true);
 			} else {
+				AudioClip fartSound = fartSounds[Random.Range (0, fartSounds.Length)];
+				if (source != null && fartSound != null) {
+					source.PlayOneShot(fartSound, 1.0f);
+				}
+
 				player.lose();
 			}
 		});

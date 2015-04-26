@@ -11,9 +11,9 @@ public class VerticalHand : MonoBehaviour {
 	public Vector2 speed = new Vector2 (30f, 30f);
 	public AudioClip grabFailSound;
 	public AudioClip grabSuccessSound;
-
 	public float upForce = 40f;
 	public float retractMagnitude = 1;
+
 	private Rigidbody2D rb2D; 
 	private SpriteRenderer spriteRenderer;
 	private Vector2 movement; 
@@ -21,11 +21,12 @@ public class VerticalHand : MonoBehaviour {
 	private GameObject target;
 	private BoxCollider2D selfCollider;
 	private BoxCollider2D targetCollider;
+	private float volume = 1.0f;
+	private AudioSource source;
+
 	bool playerWins;
 	bool inputDisabled;
-	private float volLow = 0.5f;
-	private float volHigh = 1.0f;
-	private AudioSource source;
+	
 	// Use this for initialization
 	void Start () {
 		rb2D = GetComponent<Rigidbody2D> ();
@@ -96,7 +97,7 @@ public class VerticalHand : MonoBehaviour {
 
 	void playSoundEffect(AudioClip clip) {
 		if (source != null && clip != null) {
-			source.PlayOneShot(clip, volHigh);
+			source.PlayOneShot(clip, volume);
 		}
 	}
 

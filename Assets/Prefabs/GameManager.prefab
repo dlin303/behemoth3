@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 438970}
   - 114: {fileID: 11401994}
+  - 82: {fileID: 8246970}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -28,6 +29,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!82 &8246970
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 168174}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!114 &11401994
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -45,7 +115,21 @@ MonoBehaviour:
   p2ArmGameObject: {fileID: 0}
   p1_worried: 1
   p2_worried: 1
-  explodeDelay: 0
+  explodeDelay: .5
+  gameTotalTime: 25
+  fartSounds:
+  - {fileID: 8300000, guid: ccdcdc451e4ed4943aeadc60565d7fe7, type: 3}
+  - {fileID: 8300000, guid: 2db9151f8e7ee4004afa34285601f8c4, type: 3}
+  - {fileID: 8300000, guid: 60c99bacaa1614c27a161716ecf6889a, type: 3}
+  - {fileID: 8300000, guid: b2ded81001d14478095b5a47c06cc82a, type: 3}
+  - {fileID: 8300000, guid: 85d1e4ba5da1d4f2f83230904b0c1db7, type: 3}
+  - {fileID: 8300000, guid: 8e833d588bd7b413e84e23dc6b81a7ad, type: 3}
+  - {fileID: 8300000, guid: 32739f5e6848a4e17aad618f98f3de02, type: 3}
+  - {fileID: 8300000, guid: 9013fbbe4f796498ba2096ffd4ac2328, type: 3}
+  - {fileID: 8300000, guid: 4aa28b87f85fd4bc2995bfb2599f544a, type: 3}
+  - {fileID: 8300000, guid: db1261cf819964ecfbfce99241aaa563, type: 3}
+  - {fileID: 8300000, guid: 023a7ae17b71649b39ff4ce5f0dab376, type: 3}
+  - {fileID: 8300000, guid: a7b839bc55d134d95a476d8caff8f7a3, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
