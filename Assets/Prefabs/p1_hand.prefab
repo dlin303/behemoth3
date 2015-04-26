@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 199248}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.57000017, y: -4.8499999, z: 0}
+  m_LocalPosition: {x: 4.53000021, y: -4.8499999, z: 0}
   m_LocalScale: {x: .695726395, y: .695726573, z: .695726573}
   m_Children: []
   m_Father: {fileID: 0}
@@ -70,11 +70,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d52ee2462274b4180a50d996aaa7e04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vertical: Vertical
-  grab: Grab_P1
+  vertical: Vertical_P2
+  grab: Grab_P2
   movingForward: 0
-  emptyHand: {fileID: 21300000, guid: ffd465a2b0a9a4888835bbfc36c213e0, type: 3}
-  clenchedHand: {fileID: 21300000, guid: 9bb9377367bee4f3ca87410d0e3b007a, type: 3}
+  emptyHand: {fileID: 0}
+  clenchedHand: {fileID: 0}
   speed: {x: 1, y: 1}
   retractMagnitude: 4
 --- !u!212 &21261450

@@ -7,7 +7,7 @@ public class VerticalHand : MonoBehaviour {
 	public bool movingForward = false;
 	public Sprite emptyHand;
 	public Sprite clenchedHand;
-	
+
 	public Vector2 speed = new Vector2(30, 30);
 	public float retractMagnitude = 4;
 	private Rigidbody2D rb2D; 
@@ -17,7 +17,8 @@ public class VerticalHand : MonoBehaviour {
 	private GameObject target;
 	private BoxCollider2D selfCollider;
 	private BoxCollider2D targetCollider;
-
+	bool playerWins;
+	bool inputDisabled;
 	// Use this for initialization
 	void Start () {
 		rb2D = GetComponent<Rigidbody2D> ();
@@ -27,14 +28,17 @@ public class VerticalHand : MonoBehaviour {
 		}
 
 		selfCollider = GetComponent<BoxCollider2D> ();
+		playerWins = false;
+		inputDisabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
 		float inputY = Input.GetAxis (vertical);
 		float grabInput = Input.GetAxis (grab);
 
-		if (inputY > 0) {
+		if (inputY > 0 && !inputDisabled) {
 			movement = new Vector2 (0, speed.y * inputY);
 			movingForward = true;
 		} else {
@@ -59,9 +63,15 @@ public class VerticalHand : MonoBehaviour {
 		if (target != null) {
 			if (selfCollider.bounds.Intersects(targetCollider.bounds) && grabbing) {
 				spriteRenderer.sprite = clenchedHand;
+				inputDisabled = true;
+				playerWins = true;
 				Destroy(target);
 			}
 		}
+	}
+
+	public bool didWin() {
+		return playerWins;
 	}
 
 	void FixedUpdate() {
@@ -73,5 +83,9 @@ public class VerticalHand : MonoBehaviour {
 			target = other.gameObject;
 			targetCollider = target.GetComponent<BoxCollider2D>();
 		}
+	}
+
+	void isMoving(){
+
 	}
 }

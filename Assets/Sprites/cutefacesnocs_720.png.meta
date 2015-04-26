@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 9606b4fd25fb74affa55121461cb9bef
+timeCreated: 1430002161
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: cutefacesnocs_720_0
+    21300002: cutefacesnocs_720_1
+    21300004: cutefacesnocs_720_2
+    21300006: cutefacesnocs_720_3
+    21300008: cutefacesnocs_720_4
+    21300010: cutefacesnocs_720_5
+    21300012: cutefacesnocs_720_6
+    21300014: cutefacesnocs_720_7
+    21300016: cutefacesnocs_720_8
+    21300018: cutefacesnocs_720_9
+    21300020: cutefacesnocs_720_10
+    21300022: cutefacesnocs_720_11
+    21300024: cutefacesnocs_720_12
+    21300026: cutefacesnocs_720_13
+    21300028: cutefacesnocs_720_14
+    21300030: cutefacesnocs_720_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: cutefacesnocs_720_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 313
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 313
+        width: 90
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_2
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 310
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_3
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 310
+        width: 91
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 215
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_5
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 215
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_6
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 212
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_7
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 215
+        width: 91
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_8
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 115
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_9
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 115
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_10
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 117
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_11
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 116
+        width: 91
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_12
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 15
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_13
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 15
+        width: 90
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_14
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 26
+        width: 76
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: cutefacesnocs_720_15
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 26
+        width: 91
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

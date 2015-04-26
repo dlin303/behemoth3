@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 7f19ec8290d604615a9d408ee91c2c7d
+timeCreated: 1430003392
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ladyfaces_720_0
+    21300002: ladyfaces_720_1
+    21300004: ladyfaces_720_2
+    21300006: ladyfaces_720_3
+    21300008: ladyfaces_720_4
+    21300010: ladyfaces_720_5
+    21300012: ladyfaces_720_6
+    21300014: ladyfaces_720_7
+    21300016: ladyfaces_720_8
+    21300018: ladyfaces_720_9
+    21300020: ladyfaces_720_10
+    21300022: ladyfaces_720_11
+    21300024: ladyfaces_720_12
+    21300026: ladyfaces_720_13
+    21300028: ladyfaces_720_14
+    21300030: ladyfaces_720_15
+    21300032: ladyfaces_720_16
+    21300034: ladyfaces_720_17
+    21300036: ladyfaces_720_18
+    21300038: ladyfaces_720_19
+    21300040: ladyfaces_720_20
+    21300042: ladyfaces_720_21
+    21300044: ladyfaces_720_22
+    21300046: ladyfaces_720_23
+    21300048: ladyfaces_720_24
+    21300050: ladyfaces_720_25
+    21300052: ladyfaces_720_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ladyfaces_720_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 304
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 304
+        width: 66
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 307
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_3
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 306
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_4
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 305
+        width: 67
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_5
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 195
+        width: 68
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_6
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 196
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 195
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 197
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_9
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 200
+        width: 67
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 198
+        width: 68
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_11
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 152
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_12
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 150
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_13
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 144
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 155
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_15
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 158
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_16
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 153
+        width: 20
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_17
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 138
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_18
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 140
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_19
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 127
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_20
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 141
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_21
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 143
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_22
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 130
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_23
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 117
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_24
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 120
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_25
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 67
+        width: 92
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 2, y: 0, z: 0, w: 0}
+    - name: ladyfaces_720_26
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 66
+        width: 97
+        height: 102
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
