@@ -39,6 +39,8 @@ public class GameManager : MonoBehaviour {
 	    p1PlayerFace = p1FaceGameObject.GetComponent<PlayerFace>(); 
 		p2PlayerFace = p2FaceGameObject.GetComponent<PlayerFace>();
 		source = GetComponent<AudioSource> ();
+
+		MusicPlayerSingleton.Instance.playGameMusic ();
 	}
 	
 	// Update is called once per frame
