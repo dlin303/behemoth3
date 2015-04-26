@@ -7,13 +7,13 @@ public class PlayerFace : MonoBehaviour {
 	public float nextFlipTime = 0f;
 	public string playerName;
 	public float explodingStartTime = 0;
+	public PlayerText playerText;
 	Animator anim;
 	bool flipToStop;
 	float decrease = 0.0f;
 	bool loser = false;
 	bool winner = false;
 
-	
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
@@ -21,7 +21,6 @@ public class PlayerFace : MonoBehaviour {
 		setNextFlipTime ();
 	}
 	
-	// Update is called once per frame
 	void Update () {
 	
 	}
@@ -32,16 +31,10 @@ public class PlayerFace : MonoBehaviour {
 		if(flipToStop) {
 	  		goInterval -= decrease;
 			nextFlipTime += stopInterval;
-			Debug.Log("go Intervall " + goInterval);
-
 		}else{
 			stopInterval += decrease;
 			nextFlipTime += goInterval;
-			Debug.Log ("stopInterval " + stopInterval);
-
 		}
-
-		//nextFlipTime = flipToStop ? nextFlipTime + stopInterval : nextFlipTime + goInterval; 
 
 	}
 
@@ -66,9 +59,11 @@ public class PlayerFace : MonoBehaviour {
 
 	public void setFaceToHappy() {
 		anim.SetBool("worried", false);
+		playerText.playerText = "(WHEW)";
 	}
 
 	public void setUnimpressed(bool unimpressed) {
+		playerText.playerText = "(...)";
 		anim.SetBool ("unimpressed", unimpressed);
 	}
 
@@ -78,6 +73,7 @@ public class PlayerFace : MonoBehaviour {
 
 	public void lose() {
 		anim.SetBool ("losing", true);
+		playerText.playerText= "(oh NOOOOOoooooo)";
 		loser = true;
 	}
 
