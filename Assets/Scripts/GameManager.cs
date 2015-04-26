@@ -50,9 +50,11 @@ public class GameManager : MonoBehaviour {
 		}
 
 		if (isGameEnding) {
+			Debug.Log("game ending");
 			if(checkIfGameHasEnded()) {
 				gameOver(new List<PlayerFace>{p1PlayerFace, p2PlayerFace});
 			}
+			checkIfPlayerLoses();
 			//let exploding animation play out
 			return;
 		}
@@ -106,7 +108,7 @@ public class GameManager : MonoBehaviour {
 
 		if(p1Arm.didWin() && p2Arm.didWin()) {
 			isGameOver = true;
-			Invoke("loadWinningEnding", 3);
+			Invoke("loadWinningEnding", 2);
 		}
 	}
 
@@ -132,7 +134,7 @@ public class GameManager : MonoBehaviour {
 		});
 
 		isGameOver = true;
-		Invoke("loadGameOverEnding", 3);
+		Invoke("loadGameOverEnding", 2);
 	}
 
 	void loadGameOverEnding() {
