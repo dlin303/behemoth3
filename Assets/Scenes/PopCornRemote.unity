@@ -737,7 +737,7 @@ Prefab:
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: clenchedHand
       value: 
-      objectReference: {fileID: 21300000, guid: 9bb9377367bee4f3ca87410d0e3b007a,
+      objectReference: {fileID: 21300000, guid: 62329615909bd40c0b9ceb403af8f860,
         type: 3}
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: vertical
@@ -781,6 +781,22 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 0a5d2808e3b1c40519a842e0d0e1b107,
         type: 3}
+    - target: {fileID: 8279436, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279436, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: BypassEffects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: grabFailSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d34a6be23e0f84964a3d04bf0161e69e, type: 3}
+    - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: grabSuccessSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 76a73e6e92cb64d9e8650b6eb53511fb, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
   m_IsPrefabParent: 0
@@ -991,7 +1007,7 @@ Prefab:
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: clenchedHand
       value: 
-      objectReference: {fileID: 21300000, guid: 9bb9377367bee4f3ca87410d0e3b007a,
+      objectReference: {fileID: 21300000, guid: 243b3dc4c8a4849b38498b65bc8473c6,
         type: 3}
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: speed.x
