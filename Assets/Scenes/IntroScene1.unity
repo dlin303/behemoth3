@@ -205,7 +205,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &1913310116
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +269,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1968717137}
   - 131: {fileID: 1968717136}
+  - 114: {fileID: 1968717138}
   m_Layer: 0
   m_Name: Fader
   m_TagString: Untagged
@@ -283,7 +284,7 @@ GUITexture:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1968717135}
   m_Enabled: 1
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 8dc97137c87c644f1afb4b937f3032f6, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
     serializedVersion: 2
@@ -307,6 +308,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1968717138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1968717135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b12e106d7511247a385d355ce7acf2ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeSpeed: .5
 --- !u!1001 &2033342688
 Prefab:
   m_ObjectHideFlags: 0

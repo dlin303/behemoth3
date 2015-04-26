@@ -218,7 +218,7 @@ GameObject:
   - 4: {fileID: 579859216}
   - 212: {fileID: 579859215}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,7 +260,7 @@ Transform:
   m_LocalPosition: {x: -8.78999996, y: -1.63, z: 0}
   m_LocalScale: {x: .893098593, y: .893098593, z: .893098593}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1011900064}
   m_RootOrder: 3
 --- !u!4 &692809675 stripped
 Transform:
@@ -467,6 +467,7 @@ Transform:
   - {fileID: 886330758}
   - {fileID: 1572884060}
   - {fileID: 692809675}
+  - {fileID: 579859216}
   m_Father: {fileID: 1539591815}
   m_RootOrder: 2
 --- !u!4 &1039322502 stripped
@@ -528,14 +529,6 @@ Prefab:
       propertyPath: p2ArmGameObject
       value: 
       objectReference: {fileID: 1752956758}
-    - target: {fileID: 11401994, guid: 28f5849775a534fd6a51788ca47beb80, type: 2}
-      propertyPath: p2_worried
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11401994, guid: 28f5849775a534fd6a51788ca47beb80, type: 2}
-      propertyPath: explodeDelay
-      value: .5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28f5849775a534fd6a51788ca47beb80, type: 2}
   m_IsPrefabParent: 0
@@ -702,7 +695,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471428, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -7.0999999
+      value: -8.02000046
       objectReference: {fileID: 0}
     - target: {fileID: 471428, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: m_LocalPosition.z
@@ -736,7 +729,7 @@ Prefab:
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: clenchedHand
       value: 
-      objectReference: {fileID: 21300000, guid: 9bb9377367bee4f3ca87410d0e3b007a,
+      objectReference: {fileID: 21300000, guid: 62329615909bd40c0b9ceb403af8f860,
         type: 3}
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: vertical
@@ -770,6 +763,32 @@ Prefab:
       propertyPath: upForce
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 21261450, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3edb193aafbd64588ac4d76230b926bd,
+        type: 3}
+    - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: clenchedEmpty
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a5d2808e3b1c40519a842e0d0e1b107,
+        type: 3}
+    - target: {fileID: 8279436, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8279436, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: BypassEffects
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: grabFailSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d34a6be23e0f84964a3d04bf0161e69e, type: 3}
+    - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: grabSuccessSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 76a73e6e92cb64d9e8650b6eb53511fb, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
   m_IsPrefabParent: 0
@@ -975,12 +994,12 @@ Prefab:
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: emptyHand
       value: 
-      objectReference: {fileID: 21300000, guid: 63ad4ddd55b224f918f357dc44837b33,
+      objectReference: {fileID: 21300000, guid: 9681940b572aa4ac9b3aac0349c4d142,
         type: 3}
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: clenchedHand
       value: 
-      objectReference: {fileID: 21300000, guid: 9bb9377367bee4f3ca87410d0e3b007a,
+      objectReference: {fileID: 21300000, guid: 243b3dc4c8a4849b38498b65bc8473c6,
         type: 3}
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: speed.x
@@ -1002,6 +1021,11 @@ Prefab:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 63ad4ddd55b224f918f357dc44837b33,
+        type: 3}
+    - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: clenchedEmpty
+      value: 
+      objectReference: {fileID: 21300000, guid: eb50bacfef2604143b8c02b238b4cba8,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
