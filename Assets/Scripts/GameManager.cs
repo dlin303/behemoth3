@@ -121,6 +121,7 @@ public class GameManager : MonoBehaviour {
 	void gameOver(List<PlayerFace> players) {
 		p1Arm.disableInput();
 		p2Arm.disableInput();
+		MusicPlayerSingleton.Instance.stopMusic ();
 		
 		players.ForEach(delegate (PlayerFace player){
 			if(player.isWinner()) {
