@@ -264,11 +264,11 @@ Camera:
     y: 0
     width: 1
     height: 2.5999999
-  near clip plane: 1
+  near clip plane: 3
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.72523308
+  orthographic size: 14.9390488
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -469,6 +469,10 @@ Prefab:
       propertyPath: p2ArmGameObject
       value: 
       objectReference: {fileID: 1752956758}
+    - target: {fileID: 11401994, guid: 28f5849775a534fd6a51788ca47beb80, type: 2}
+      propertyPath: p2_worried
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28f5849775a534fd6a51788ca47beb80, type: 2}
   m_IsPrefabParent: 0
@@ -795,6 +799,10 @@ Prefab:
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: grab
       value: Grab_P2
+      objectReference: {fileID: 0}
+    - target: {fileID: 199248, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: m_Name
+      value: p2_hand
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
