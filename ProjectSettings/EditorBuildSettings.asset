@@ -10,8 +10,50 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/IntroScene1.unity
   - enabled: 1
-    path: Assets/Scenes/IntroScene2.unity
+    path: Assets/Scenes/DialogueTest.unity
   - enabled: 1
     path: Assets/Scenes/P1Lose.unity
   - enabled: 1
     path: Assets/Scenes/P2Lose.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 0
+    path: Assets/Scenes/IntroScene1.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene2.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene3.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene4.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene5.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene6.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene7.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene8.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene9.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene10.unity
+  - enabled: 1
+    path: Assets/Scenes/IntroScene11.unity
