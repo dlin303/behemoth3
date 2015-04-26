@@ -6,6 +6,7 @@ public class VerticalHand : MonoBehaviour {
 	public string grab = "Grab_P1";
 	public bool movingForward = false;
 	public Sprite emptyHand;
+	public Sprite clenchedEmpty;
 	public Sprite clenchedHand;
 	public Vector2 speed = new Vector2 (30f, 30f);
 
@@ -60,13 +61,16 @@ public class VerticalHand : MonoBehaviour {
 			Mathf.Clamp (transform.position.y, topBorder, bottomBorder),
 			transform.position.z);
 
-		if (target != null) {
-			if (selfCollider.bounds.Intersects(targetCollider.bounds) && grabbing) {
-				spriteRenderer.sprite = clenchedHand;
-				inputDisabled = true;
-				playerWins = true;
-				Destroy(target);
-			}
+		if (target != null && selfCollider.bounds.Intersects (targetCollider.bounds) && grabbing) {
+			spriteRenderer.sprite = clenchedHand;
+			inputDisabled = true;
+			playerWins = true;
+			Destroy (target);
+		} else if (grabbing && !playerWins) {
+			spriteRenderer.sprite = clenchedEmpty;
+		} else if (!playerWins) {
+			//kind of meh. we are reassigning the sprite every update :/
+			spriteRenderer.sprite = emptyHand;
 		}
 	}
 

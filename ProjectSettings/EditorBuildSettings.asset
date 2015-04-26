@@ -6,8 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PopCornRemote.unity
-  - enabled: 1
     path: Assets/Scenes/IntroScene1.unity
   - enabled: 1
     path: Assets/Scenes/DialogueTest.unity
@@ -57,3 +55,5 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroScene10.unity
   - enabled: 1
     path: Assets/Scenes/IntroScene11.unity
+  - enabled: 1
+    path: Assets/Scenes/PopCornRemote.unity
