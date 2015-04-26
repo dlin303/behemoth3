@@ -81,7 +81,7 @@ public class GameManager : MonoBehaviour {
 			gameOver (new List<PlayerFace> {p1PlayerFace});
 		}
 
-		if(p2Arm.movingForward && p2PlayerFace.isExploding())
+		if(p2Arm.movingForward && p2PlayerFace.isExploding() && currentTime - p1PlayerFace.explodingStartTime > explodeDelay)
 		{
 			p1PlayerFace.setUnimpressed(true);
 			gameOver (new List<PlayerFace> {p2PlayerFace});
