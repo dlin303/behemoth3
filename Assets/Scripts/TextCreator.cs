@@ -24,7 +24,6 @@ public class TextCreator : MonoBehaviour {
 			textSecond = guiTextSecond.text;
 			guiTextSecond.text = "";
 		}
-
 	}
 	
 	// Update is called once per frame
