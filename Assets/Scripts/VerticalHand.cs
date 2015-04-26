@@ -7,9 +7,10 @@ public class VerticalHand : MonoBehaviour {
 	public bool movingForward = false;
 	public Sprite emptyHand;
 	public Sprite clenchedHand;
+	public Vector2 speed = new Vector2 (30f, 30f);
 
-	public Vector2 speed = new Vector2(30, 30);
-	public float retractMagnitude = 4;
+	public float upForce = 40f;
+	public float retractMagnitude = 1;
 	private Rigidbody2D rb2D; 
 	private SpriteRenderer spriteRenderer;
 	private Vector2 movement; 
@@ -35,14 +36,14 @@ public class VerticalHand : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		float inputY = Input.GetAxis (vertical);
+		//float inputY = Input.GetAxis (vertical);
 		float grabInput = Input.GetAxis (grab);
 
-		if (inputY > 0 && !inputDisabled) {
-			movement = new Vector2 (0, speed.y * inputY);
+		if (Input.GetKeyDown(vertical) && !inputDisabled) {
+			movement = new Vector2(0, upForce);
 			movingForward = true;
 		} else {
-			movement = new Vector2 (0, speed.y*-1*retractMagnitude);
+			movement = new Vector2 (0, 10f*-1f*retractMagnitude);
 			movingForward = false;
 		}
 
@@ -74,7 +75,7 @@ public class VerticalHand : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		rb2D.velocity = movement;
+			rb2D.velocity = movement;
 	}
 
 	public void disableInput() {
