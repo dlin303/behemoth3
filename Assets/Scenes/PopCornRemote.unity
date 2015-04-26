@@ -473,6 +473,10 @@ Prefab:
       propertyPath: p2_worried
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11401994, guid: 28f5849775a534fd6a51788ca47beb80, type: 2}
+      propertyPath: explodeDelay
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28f5849775a534fd6a51788ca47beb80, type: 2}
   m_IsPrefabParent: 0
@@ -627,6 +631,10 @@ Prefab:
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: speed.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: retractMagnitude
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
@@ -847,6 +855,10 @@ Prefab:
     - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
       propertyPath: speed.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491454, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}
+      propertyPath: retractMagnitude
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 59368e0cbc3524b8c96a36116ee6ad70, type: 2}

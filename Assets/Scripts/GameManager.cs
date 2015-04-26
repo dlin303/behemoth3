@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour {
 	PlayerFace p1PlayerFace;
 	PlayerFace p2PlayerFace;
 
-	float gameStartTime = 0f; 
+	float gameStartTime; 
 	float gameTotalTime = 15.0f;
 	bool isGameEnding = false;
 	bool isGameOver = false;
@@ -35,11 +35,9 @@ public class GameManager : MonoBehaviour {
 	    p1PlayerFace = p1FaceGameObject.GetComponent<PlayerFace>(); 
 		p2PlayerFace = p2FaceGameObject.GetComponent<PlayerFace>();
 	}
-	void Update () {
-	}
 	
 	// Update is called once per frame
-	void Stuff () {
+	void Update () {
 		float currentTime = Time.time;
 
 		if(isGameOver) {
@@ -57,7 +55,7 @@ public class GameManager : MonoBehaviour {
 
 		checkIfPlayerLoses();
 
-		if(currentTime - gameTotalTime < 5.0f) {
+		if(currentTime - gameStartTime > gameTotalTime - 5) {
 			p1PlayerFace.setFaceToExploding();
 			p2PlayerFace.setFaceToExploding();
 			//can do other things to indicate game is ending 
@@ -77,13 +75,15 @@ public class GameManager : MonoBehaviour {
 	void checkIfPlayerLoses() {
 		float currentTime = Time.time;
 
-		if(p1Arm.movingForward && p1PlayerFace.isExploding() && currentTime - p1PlayerFace.explodingStartTime > 0.50f)
+		if(p1Arm.movingForward && p1PlayerFace.isExploding() && currentTime - p1PlayerFace.explodingStartTime > explodeDelay)
 		{
+			p2PlayerFace.setUnimpressed(true);
 			gameOver (new List<PlayerFace> {p1PlayerFace});
 		}
 
 		if(p2Arm.movingForward && p2PlayerFace.isExploding())
 		{
+			p1PlayerFace.setUnimpressed(true);
 			gameOver (new List<PlayerFace> {p2PlayerFace});
 		}
 	}
@@ -109,10 +109,9 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void gameOver(List<PlayerFace> players) {
-		Rigidbody2D p1rb = p1ArmGameObject.GetComponent<Rigidbody2D>();
-		Rigidbody2D p2rb = p2ArmGameObject.GetComponent<Rigidbody2D>();
-		p1rb.isKinematic = false;
-		p2rb.isKinematic = false;
+		p1Arm.disableInput();
+		p2Arm.disableInput();
+		
 		players.ForEach(delegate (PlayerFace player){
 			player.lose();
 		});

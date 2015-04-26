@@ -46,7 +46,6 @@ public class VerticalHand : MonoBehaviour {
 			movingForward = false;
 		}
 
-		//TODO, this isn't used yet
 		grabbing = grabInput > 0;
 
 		//make sure hand doesn't leave camera
@@ -78,14 +77,14 @@ public class VerticalHand : MonoBehaviour {
 		rb2D.velocity = movement;
 	}
 
+	public void disableInput() {
+		inputDisabled = true;
+	}
+
 	void OnTriggerEnter2D(Collider2D other) {
 		if (other.tag == "Target") {
 			target = other.gameObject;
 			targetCollider = target.GetComponent<BoxCollider2D>();
 		}
-	}
-
-	void isMoving(){
-
 	}
 }

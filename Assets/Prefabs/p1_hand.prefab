@@ -76,7 +76,7 @@ MonoBehaviour:
   emptyHand: {fileID: 0}
   clenchedHand: {fileID: 0}
   speed: {x: 1, y: 1}
-  retractMagnitude: 4
+  retractMagnitude: 1
 --- !u!212 &21261450
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -16,6 +16,7 @@ public class PlayerFace : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
+		setNextFlipTime ();
 	}
 	
 	// Update is called once per frame
@@ -23,7 +24,7 @@ public class PlayerFace : MonoBehaviour {
 	
 	}
 
-	float setNextFlipTime() {
+	void setNextFlipTime() {
 		decrease = Random.Range(0.0f, 0.50f);
 
 		if(flipToStop) {
@@ -34,7 +35,6 @@ public class PlayerFace : MonoBehaviour {
 
 		nextFlipTime = flipToStop ? nextFlipTime + goInterval : nextFlipTime + stopInterval; 
 		Debug.Log(string.Format("setting player {0} next flip time = {1}", playerName, nextFlipTime)); 
-		return nextFlipTime;
 	}
 
 	void setPlayerFace(bool isExploding, bool overrideCheck = false) {
@@ -59,6 +59,10 @@ public class PlayerFace : MonoBehaviour {
 
 	public void setFaceToHappy() {
 		anim.SetBool("happy", true);
+	}
+
+	public void setUnimpressed(bool unimpressed) {
+		anim.SetBool ("unimpressed", unimpressed);
 	}
 
 	public bool isExploding() {
