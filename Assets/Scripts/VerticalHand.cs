@@ -11,6 +11,7 @@ public class VerticalHand : MonoBehaviour {
 	public Vector2 speed = new Vector2 (30f, 30f);
 	public AudioClip grabFailSound;
 	public AudioClip grabSuccessSound;
+	public AudioClip reachSound;
 	public float upForce = 40f;
 	public float retractMagnitude = 1;
 
@@ -48,6 +49,7 @@ public class VerticalHand : MonoBehaviour {
 		float grabInput = Input.GetAxis (grab);
 
 		if (Input.GetKeyDown(vertical) && !inputDisabled) {
+			playSoundEffect(reachSound);
 			movement = new Vector2(0, upForce);
 			movingForward = true;
 		} else {
