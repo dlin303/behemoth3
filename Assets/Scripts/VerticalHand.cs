@@ -9,6 +9,8 @@ public class VerticalHand : MonoBehaviour {
 	public Sprite clenchedEmpty;
 	public Sprite clenchedHand;
 	public Vector2 speed = new Vector2 (30f, 30f);
+	public AudioClip grabFailSound;
+	public AudioClip grabSuccessSound;
 
 	public float upForce = 40f;
 	public float retractMagnitude = 1;
@@ -21,10 +23,14 @@ public class VerticalHand : MonoBehaviour {
 	private BoxCollider2D targetCollider;
 	bool playerWins;
 	bool inputDisabled;
+	private float volLow = 0.5f;
+	private float volHigh = 1.0f;
+	private AudioSource source;
 	// Use this for initialization
 	void Start () {
 		rb2D = GetComponent<Rigidbody2D> ();
 		spriteRenderer = GetComponent<SpriteRenderer> ();
+		source = GetComponent<AudioSource> ();
 		if (spriteRenderer != null) {
 			spriteRenderer.sprite = emptyHand;
 		}
@@ -62,11 +68,13 @@ public class VerticalHand : MonoBehaviour {
 			transform.position.z);
 
 		if (target != null && selfCollider.bounds.Intersects (targetCollider.bounds) && grabbing) {
+			playSoundEffect(grabSuccessSound);
 			spriteRenderer.sprite = clenchedHand;
 			inputDisabled = true;
 			playerWins = true;
 			Destroy (target);
 		} else if (grabbing && !playerWins) {
+			playSoundEffect(grabFailSound);
 			spriteRenderer.sprite = clenchedEmpty;
 		} else if (!playerWins) {
 			//kind of meh. we are reassigning the sprite every update :/
@@ -84,6 +92,12 @@ public class VerticalHand : MonoBehaviour {
 
 	public void disableInput() {
 		inputDisabled = true;
+	}
+
+	void playSoundEffect(AudioClip clip) {
+		if (source != null && clip != null) {
+			source.PlayOneShot(clip, volHigh);
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
