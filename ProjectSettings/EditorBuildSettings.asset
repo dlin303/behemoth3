@@ -65,3 +65,5 @@ EditorBuildSettings:
     path: Assets/Scenes/GameInstructions.unity
   - enabled: 1
     path: Assets/Scenes/PopCornRemote.unity
+  - enabled: 1
+    path: Assets/Scenes/BothLose.unity

@@ -50,7 +50,6 @@ public class GameManager : MonoBehaviour {
 		}
 
 		if (isGameEnding) {
-			Debug.Log("game ending");
 			if(checkIfGameHasEnded()) {
 				gameOver(new List<PlayerFace>{p1PlayerFace, p2PlayerFace});
 			}
