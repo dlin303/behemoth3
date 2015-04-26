@@ -45,13 +45,15 @@ public class MusicPlayerSingleton : MonoBehaviour {
 			source.Stop ();
 		}
 	}
-	
-	public static MusicPlayerSingleton GetInstance() {
-		return instance;
-	}
 
 	public static MusicPlayerSingleton Instance {
-		get { return instance; }
+		get {
+			if (instance == null) {
+				instance = GameObject.FindObjectOfType<MusicPlayerSingleton>();
+				DontDestroyOnLoad(instance.gameObject);
+			}
+			return instance; 
+		}
 	}
 	
 	
