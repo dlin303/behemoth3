@@ -22,7 +22,7 @@ public class VerticalHand : MonoBehaviour {
 	private GameObject target;
 	private BoxCollider2D selfCollider;
 	private BoxCollider2D targetCollider;
-	private float volume = 1.0f;
+	private float volume = 2.0f;
 	private AudioSource source;
 
 	bool playerWins;
